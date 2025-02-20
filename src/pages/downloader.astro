@@ -1,0 +1,87 @@
+---
+import "@fontsource/inter";
+import { CssVarsProvider, Box, Alert } from "@mui/joy";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Glitz Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Rehosted SH1mmer" />
+    <meta property="og:description" content="SH1mmer: Downloader" />
+    <meta property="og:url" content="https://sh1mmer.t3rm1n4l.dev/downloader" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://sh1mmer.t3rm1n4l.dev/sh1mmer/assets/icon.png" />
+    <meta property="og:image:alt" content="SH1mmer" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="SH1mmer" />
+    <title>Glitz Downloader</title>
+
+    
+    <link rel="icon" href="/sh1mmer/assets/icon.png" />
+    <link rel="preload" href="/sh1mmer/files/main.css" as="style">
+
+    <link rel="stylesheet" href="/sh1mmer/files/main.css" />
+    <link rel="icon" href="/img/download.webp" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preload" href="/sh1mmer/downloader/script.js" as="script" />
+    <script is:inline src="/sh1mmer/downloader/script.js"></script>
+  </head>
+    <body onload="start()">
+
+        <Alert
+          id="defectiveMirrorAlert"
+          sx={{ display: "none", marginBottom: "7px" }}
+          color="danger"
+          variant="outlined"
+          size="lg"
+        >
+          The chosen mirror is defective! Reloading in 7 seconds...
+        </Alert>
+        <Alert
+          id="dataAlert"
+          sx={{ display: "none" }}
+          color="danger"
+          variant="outlined"
+          size="lg"
+        >
+          Data error! Unable to fetch <code>data.json</code>.
+        </Alert>
+      </Box>
+      <div class="header">
+      <h1>Glitz</h1>
+      <h3>A collection of mirrors for leaked  RMA
+          shims. <br /></h3>
+      <br />
+      <a href="./" target="_self">Back to home</a>
+    </div>
+      <div class="section green">
+      
+     <center>
+<select id="mirror" style="margin-right: 4px;">
+        <option>select a mirror</option>
+      </select>
+
+      <select id="file" style="margin-left: 5px; display: none;">
+        <option>select a board</option>
+      </select>
+
+      <button id="download" class="waxbutton" style="margin-left: 9px; display:none; "
+        >download</button
+      >
+      </center>
+    </div>
+     <div class="section blue">
+        <h3>
+          In order to use SH1mmer, you need to inject the shims <a href=
+          "/sh1mmer/builder">here</a>.
+          <br />
+           These files aren't endorsed by <a href="https://mercurywork.shop"
+           >Mercury Workshop</a>.
+        </h3>
+      </div>
+    </body>
+</html>
