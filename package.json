@@ -21,14 +21,14 @@
     "@fontsource/inter": "^5.2.5",
     "@mui/icons-material": "^5.17.1",
     "@mui/joy": "5.0.0-beta.48",
-    "@types/react": "^18.3.22",
+    "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.8.0",
+    "astro": "^5.8.1",
     "npm": "^10.9.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "^1.89.0"
+    "sass": "^1.89.1"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
