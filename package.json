@@ -24,7 +24,7 @@
     "@types/react": "^18.3.24",
     "@types/react-dom": "^18.3.7",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.13.10",
+    "astro": "^5.14.1",
     "npm": "^10.9.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
